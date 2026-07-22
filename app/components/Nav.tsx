@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,22 +26,22 @@ export function Nav() {
 
         <nav className="hidden md:flex items-center gap-10">
           {["Projects", "Skills", "About"].map((item) => (
-            <a
+            <Link
               key={item}
               href={`/#${item.toLowerCase()}`}
               className="text-sm text-zinc-500 hover:text-zinc-100 transition-colors duration-200"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        <a
+        <Link
           href="/#contact"
           className="text-sm font-medium bg-zinc-100 hover:bg-white text-zinc-900 px-4 py-2 rounded-full transition-colors duration-200"
         >
           Get in touch
-        </a>
+        </Link>
       </div>
     </header>
   );
