@@ -27,7 +27,7 @@ export function Nav() {
           {["Projects", "Skills", "About"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/#${item.toLowerCase()}`}
               className="text-sm text-zinc-500 hover:text-zinc-100 transition-colors duration-200"
             >
               {item}
@@ -36,7 +36,7 @@ export function Nav() {
         </nav>
 
         <a
-          href="#contact"
+          href="/#contact"
           className="text-sm font-medium bg-zinc-100 hover:bg-white text-zinc-900 px-4 py-2 rounded-full transition-colors duration-200"
         >
           Get in touch

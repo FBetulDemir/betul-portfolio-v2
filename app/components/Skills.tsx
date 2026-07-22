@@ -105,7 +105,7 @@ export function Skills() {
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="text-sm text-zinc-300 border border-zinc-800 bg-zinc-900 rounded-full px-3.5 py-1.5 hover:border-zinc-600 hover:text-zinc-100 transition-colors duration-200"
+                    className="text-sm text-zinc-300 bg-zinc-800/60 rounded-full px-3.5 py-1.5 hover:bg-zinc-700/60 hover:text-zinc-100 transition-colors duration-200"
                   >
                     {item}
                   </span>
