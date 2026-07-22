@@ -14,14 +14,14 @@ export function About() {
 
           <div className="md:col-span-8 space-y-6">
             <p className="text-lg text-zinc-400 leading-relaxed">
-              I&apos;m I'm a frontend developer who enjoys owning the full UI
-              process — from user flows and UX decisions in Figma to
-              implementation inJavaScript based languages like React, Next.js
-              and TypeScript, and modern frameworks. I focus on building
-              interfaces that are clear, consistent, and easy to use, with code
-              that stays maintainable as the product grows. I work effectively
-              with AI tools — including agentic workflows with Claude — to speed
-              up iteration and improve quality without sacrificing structure or
+              I'm a frontend developer who enjoys owning the full UI process —
+              from user flows and UX decisions in Figma to implementation
+              inJavaScript based languages like React, Next.js and TypeScript,
+              and modern frameworks. I focus on building interfaces that are
+              clear, consistent, and easy to use, with code that stays
+              maintainable as the product grows. I work effectively with AI
+              tools — including agentic workflows with Claude — to speed up
+              iteration and improve quality without sacrificing structure or
               clarity. I'm based in Sweden and open to opportunities worldwide,
               remote or on-site.
             </p>

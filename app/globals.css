@@ -19,3 +19,30 @@ html {
   background: #27272a;
   border-radius: 3px;
 }
+
+@theme {
+  --animate-build-fade-out: build-fade-out 3s ease-in-out infinite;
+  --animate-build-fade-in: build-fade-in 3s ease-in-out infinite;
+
+  @keyframes build-fade-out {
+    0%,
+    45% {
+      opacity: 1;
+    }
+    55%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes build-fade-in {
+    0%,
+    45% {
+      opacity: 0;
+    }
+    55%,
+    100% {
+      opacity: 1;
+    }
+  }
+}

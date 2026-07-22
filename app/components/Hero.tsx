@@ -38,12 +38,12 @@ export function Hero() {
             </p>
             <p className="text-base md:text-lg text-zinc-400 leading-relaxed mt-5">
               → These days I design UI and{" "}
-              <span className="group relative inline-grid align-baseline cursor-default">
-                <span className="col-start-1 row-start-1 transition-opacity duration-700 ease-in-out group-hover:opacity-0">
+              <span className="relative inline-grid align-baseline">
+                <span className="col-start-1 row-start-1 animate-build-fade-out">
                   build
                 </span>
                 <span
-                  className="col-start-1 row-start-1 pointer-events-none font-mono tracking-wide text-indigo-400 opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100 group-hover:[text-shadow:0_0_12px_rgba(129,140,248,0.55)]"
+                  className="col-start-1 row-start-1 pointer-events-none font-mono tracking-wide text-indigo-400 [text-shadow:0_0_12px_rgba(129,140,248,0.55)] animate-build-fade-in"
                   aria-hidden="true">
                   build
                 </span>
