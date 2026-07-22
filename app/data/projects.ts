@@ -12,6 +12,7 @@ export type Project = {
   description: string;
   image: string;
   imageFit?: "contain" | "cover";
+  focus: string[];
   tech: string[];
   bullets: string[];
   process: ProcessStep[];
@@ -31,6 +32,7 @@ export const projects: Project[] = [
       "End-to-end redesign and WordPress rebuild of shipflow.se, the public-facing site for Flowtech International AB — a platform used by shipyards, design offices, and universities across Asia, the Americas, and Europe. Sole designer and developer, from user interviews through production launch.",
     image: "/projects/shipflow2.png",
     imageFit: "contain",
+    focus: ["UX Research", "Interaction Design", "End-to-End Delivery"],
     tech: [
       "Figma",
       "WordPress",
@@ -94,6 +96,7 @@ export const projects: Project[] = [
       "Owned the frontend for Framsteg 247 AB's technology transfer office automation platform — from user research in a domain I'd never worked in, to a Figma redesign, to 30+ production React components, alongside a peer frontend developer and an AI-focused backend engineer.",
     image: "/projects/framsteg_white_bg.png",
     imageFit: "contain",
+    focus: ["User Flows", "Component Architecture", "Cross-Team Collaboration"],
     tech: [
       "Figma",
       "UX Research",
@@ -153,6 +156,7 @@ export const projects: Project[] = [
       "A conceptual, full-stack community platform exploring how anonymous dialogue about gender equality in academia could work — not tied to any real institution. Designed in Figma and built in Next.js and Supabase, with a simplified nickname-and-avatar identity model and an integrated Gemini AI assistant.",
     image: "/projects/agora.png",
     imageFit: "contain",
+    focus: ["Interaction Design", "Full-Stack Development", "AI Integration"],
     tech: [
       "Next.js",
       "TypeScript",
@@ -216,6 +220,7 @@ export const projects: Project[] = [
       "A two-person household chore tracker where recurring chores are assigned points based on difficulty. Members complete chores, earn points, and compete on a leaderboard.",
     image: "/projects/chore-app.png",
     imageFit: "contain",
+    focus: ["Product Design", "Full-Stack Development", "PWA"],
     tech: [
       "Next.js",
       "TypeScript",

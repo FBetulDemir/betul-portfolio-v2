@@ -57,8 +57,8 @@ export function Projects() {
               </p>
 
               <div className="flex flex-wrap gap-2">
-                {project.tech.map((t) => (
-                  <TechBadge key={t}>{t}</TechBadge>
+                {project.focus.map((f) => (
+                  <TechBadge key={f}>{f}</TechBadge>
                 ))}
               </div>
             </Link>
