@@ -59,7 +59,7 @@ export function Hero() {
               View Projects →
             </a>
             <a
-              href="/cv/Betul-Demir_CV.pdf"
+              href="/cv/Betul-Demir-CV.pdf"
               download
               className="text-sm font-medium border border-zinc-700 hover:border-zinc-500 text-zinc-400 hover:text-zinc-100 px-6 py-3 rounded-full transition-colors duration-200">
               Download CV
