@@ -148,9 +148,9 @@ export const projects: Project[] = [
     title: "Agora",
     subtitle: "Anonymous Community Platform — Thesis Project",
     blurb:
-      "Anonymous campus platform for gender-equality dialogue, with an AI assistant built in.",
+      "A conceptual anonymous platform for gender-equality dialogue in academia, with a lightweight identity model and an AI assistant.",
     description:
-      "A full-stack community platform enabling anonymous dialogue about gender equality in academia. Designed in Figma from research through to implementation, with an integrated Gemini AI assistant and Supabase backend.",
+      "A conceptual, full-stack community platform exploring how anonymous dialogue about gender equality in academia could work — not tied to any real institution. Designed in Figma and built in Next.js and Supabase, with a simplified nickname-and-avatar identity model and an integrated Gemini AI assistant.",
     image: "/projects/agora.png",
     imageFit: "contain",
     tech: [
@@ -163,33 +163,33 @@ export const projects: Project[] = [
       "Gemini API",
     ],
     bullets: [
-      "Conducted literature review and benchmarking to inform design decisions",
-      "Designed full UI in Figma — wireframes, prototypes, iterative revisions with supervisor",
-      "Built anonymous post feed, threaded comments, hashtag filtering, emoji avatar profiles",
-      "Implemented dynamic Trending Topics word cloud based on real hashtag activity",
-      "Integrated Gemini API as an AI assistant for gender equality questions",
-      "Modelled relational database in Supabase (PostgreSQL) with Row Level Security",
+      "Grounded the concept in a literature review of two Chalmers master's theses on gender-equality tools and AI tone, plus benchmarking of existing forum platforms",
+      "Designed the full UI in Figma — wireframes through interactive prototypes — iterating with my supervisor, Dr. Jasmina Maric, across several rounds",
+      "Scoped deliberately to an MVP: anonymous post feed, comments, hashtag filtering, and a simple nickname-and-avatar profile",
+      "Built a simplified identity model instead of full authentication — nickname and emoji avatar, no email or password — to keep the barrier to participation low",
+      "Implemented a dynamic Trending Topics word cloud and integrated the Gemini API as an optional 'Ask AI' assistant for users unsure how to phrase a post",
+      "Enabled Row Level Security on every Supabase table as groundwork for real authentication in a future version",
     ],
     process: [
       {
         phase: "Research & Discovery",
         detail:
-          "Conducted a literature review and benchmarked existing platforms to understand how an anonymous community around gender equality in academia should work — and where similar platforms fall short.",
+          "Reviewed two related Chalmers master's theses — one on AI tone in sensitive contexts, one on engagement in gender-equality tools — and benchmarked existing forum platforms to ground the concept before designing anything.",
       },
       {
         phase: "Design",
         detail:
-          "Designed the full UI in Figma, from wireframes to high-fidelity prototypes, iterating with my thesis supervisor at Chalmers along the way.",
+          "Designed wireframes and interactive prototypes in Figma, iterating with my supervisor, Dr. Jasmina Maric, across multiple rounds until the user flow and visual tone were approved.",
       },
       {
         phase: "Build",
         detail:
-          "Built the anonymous post feed, threaded comments, hashtag filtering, and a dynamic Trending Topics word cloud on Next.js and Supabase, with an integrated Gemini API assistant for gender-equality questions.",
+          "Scoped deliberately to an MVP — anonymous post feed, comments, hashtag filtering with a dynamic word cloud, and a lightweight nickname-and-avatar profile — built in Next.js, TypeScript, and Supabase with a component-based architecture.",
       },
       {
-        phase: "Launch & Results",
+        phase: "Launch & Reflection",
         detail:
-          "Modelled the relational schema in Supabase with Row Level Security so anonymity was enforced at the database level, not just the UI, then delivered the platform as my examensarbete (thesis).",
+          "Integrated the Gemini API as an optional 'Ask AI' assistant for users unsure how to phrase a sensitive post, and enabled Row Level Security across every table as groundwork for full authentication in a later version. The prototype is live as a demo; real user testing and moderation tooling are earmarked for a Version 2.",
       },
     ],
     links: [
@@ -199,7 +199,7 @@ export const projects: Project[] = [
         href: "https://github.com/FBetulDemir/Agora.git",
       },
     ],
-    note: "Thesis (Examensarbete) · Design supervised by Dr. Jasmina Maric, Interaction Design, Chalmers University of Technology",
+    note: "Thesis (Examensarbete), FED24 · NBI-Handelsakademin · Supervised by Dr. Jasmina Maric (Interaction Design & Software Engineering, Chalmers University of Technology) · Conceptual project, not affiliated with a specific institution",
   },
   {
     slug: "chorequest",

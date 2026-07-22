@@ -1,11 +1,21 @@
 type SkillGroup = {
   category: string;
+  accent: "indigo" | "sky" | "violet" | "amber" | "emerald";
   items: string[];
 };
+
+const accentClasses = {
+  indigo: { dot: "bg-indigo-400 shadow-[0_0_10px] shadow-indigo-400/70" },
+  sky: { dot: "bg-sky-400 shadow-[0_0_10px] shadow-sky-400/70" },
+  violet: { dot: "bg-violet-400 shadow-[0_0_10px] shadow-violet-400/70" },
+  amber: { dot: "bg-amber-400 shadow-[0_0_10px] shadow-amber-400/70" },
+  emerald: { dot: "bg-emerald-400 shadow-[0_0_10px] shadow-emerald-400/70" },
+} as const;
 
 const skills: SkillGroup[] = [
   {
     category: "Frontend",
+    accent: "indigo",
     items: [
       "Next.js",
       "React",
@@ -14,24 +24,26 @@ const skills: SkillGroup[] = [
       "HTML & CSS",
       "Tailwind CSS",
       "Responsive Layout",
-      "Design Systems",
       "WordPress",
     ],
   },
   {
     category: "State & Data",
+    accent: "sky",
     items: [
       "REST APIs",
       "Zustand",
       "Context API",
       "Firebase / Firestore",
       "Supabase",
+      "Amazon DynamoDB",
       "Forms & Validation",
       "Async Patterns",
     ],
   },
   {
-    category: "UX & Design",
+    category: "Design & UX",
+    accent: "violet",
     items: [
       "Figma",
       "Design Systems",
@@ -45,8 +57,12 @@ const skills: SkillGroup[] = [
     ],
   },
   {
-    category: "Tooling",
+    category: "Backend & Tooling",
+    accent: "amber",
     items: [
+      "Node.js / Express",
+      "PHP",
+      "DNS & Hosting Config",
       "Git & GitHub",
       "Vercel",
       "Chrome DevTools",
@@ -56,17 +72,8 @@ const skills: SkillGroup[] = [
     ],
   },
   {
-    category: "Backend Basics",
-    items: [
-      "Node.js / Express",
-      "REST APIs",
-      "Amazon DynamoDB",
-      "PHP",
-      "DNS & Hosting Config",
-    ],
-  },
-  {
-    category: "AI & Tools",
+    category: "AI-Assisted Workflow",
+    accent: "emerald",
     items: [
       "Claude (agentic use)",
       "Figma Make",
@@ -90,18 +97,21 @@ export function Skills() {
           </h2>
         </div>
 
-        <div className="divide-y divide-zinc-800/60">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((group) => (
             <div
               key={group.category}
-              className="grid grid-cols-1 md:grid-cols-12 gap-4 py-8 items-start"
+              className="group rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 transition-all duration-300 hover:border-zinc-700 hover:-translate-y-0.5"
             >
-              <div className="md:col-span-3">
-                <p className="text-sm font-medium text-zinc-500">
+              <div className="flex items-center gap-2.5 mb-5">
+                <span
+                  className={`h-2 w-2 rounded-full shrink-0 ${accentClasses[group.accent].dot}`}
+                />
+                <h3 className="text-sm font-semibold text-zinc-100">
                   {group.category}
-                </p>
+                </h3>
               </div>
-              <div className="md:col-span-9 flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <span
                     key={item}
