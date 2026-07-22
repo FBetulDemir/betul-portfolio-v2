@@ -198,6 +198,10 @@ export const projects: Project[] = [
         label: "View Code →",
         href: "https://github.com/FBetulDemir/Agora.git",
       },
+      {
+        label: "Read Full Thesis (PDF) →",
+        href: "/projects/Agora_Thesis.pdf",
+      },
     ],
     note: "Thesis (Examensarbete), FED24 · NBI-Handelsakademin · Supervised by Dr. Jasmina Maric (Interaction Design & Software Engineering, Chalmers University of Technology) · Conceptual project, not affiliated with a specific institution",
   },
