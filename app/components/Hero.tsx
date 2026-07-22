@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
@@ -19,59 +17,53 @@ export function Hero() {
         </div>
 
         {/* Greeting */}
+
         <p className="text-lg md:text-xl text-zinc-400 mb-4">Hey, I&apos;m</p>
 
         {/* Name */}
         <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none mb-2">
           Betül
         </h1>
-        <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none text-zinc-600 mb-16">
+        <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none text-zinc-600 mb-16 border-b border-zinc-800 pb-6">
           Demir Korkmaz
         </h1>
 
         {/* Bottom row */}
-        <div className="flex flex-col md:flex-row items-stretch gap-8 mt-8 border-t border-zinc-800 pt-10">
-          {/* Text column */}
-          <div className="max-w-lg flex flex-col gap-6">
-            <div>
-              <p className="text-base md:text-lg text-zinc-400 leading-relaxed">
-                Curious by nature, disciplined by necessity. I went from
-                self-taught nights and weekends to formal education to shipping
-                production code.{" "}
-              </p>
-              <p className="text-base md:text-lg text-zinc-400 leading-relaxed mt-2">
-                → These days I design UI and build, and spend summers sailing
-                instead of doomscrolling.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="#projects"
-                className="text-sm font-medium bg-indigo-500 hover:bg-indigo-400 text-white px-6 py-3 rounded-full transition-colors duration-200">
-                View Projects →
-              </a>
-              <a
-                href="/cv/Betul-Demir_CV.pdf"
-                download
-                className="text-sm font-medium border border-zinc-700 hover:border-zinc-500 text-zinc-400 hover:text-zinc-100 px-6 py-3 rounded-full transition-colors duration-200">
-                Download CV
-              </a>
-            </div>
+        <div className="max-w-lg flex flex-col gap-8 mt-8  pt-14 pb-4">
+          <div>
+            <p className="text-base md:text-lg text-zinc-400 leading-relaxed">
+              Curious by nature, disciplined by necessity. I went from
+              self-taught nights and weekends to formal education to shipping
+              production code.{" "}
+            </p>
+            <p className="text-base md:text-lg text-zinc-400 leading-relaxed mt-5">
+              → These days I design UI and{" "}
+              <span className="group relative inline-grid align-baseline">
+                <span className="col-start-1 row-start-1 transition-opacity duration-700 ease-in-out group-hover:opacity-0">
+                  build
+                </span>
+                <span
+                  className="col-start-1 row-start-1 font-mono text-indigo-400 opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100"
+                  aria-hidden="true">
+                  build
+                </span>
+              </span>
+              , and spend summers sailing instead of doomscrolling.
+            </p>
           </div>
 
-          {/* Photo column — image stays centered within this column regardless of text height */}
-          <div className="flex items-center justify-center shrink-0">
-            <div className="relative aspect-4/5 w-40 md:w-52 rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800">
-              <Image
-                src="/profile/profile-pic.png"
-                alt="Betül Demir Korkmaz"
-                fill
-                priority
-                className="object-cover"
-                sizes="208px"
-              />
-            </div>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="#projects"
+              className="text-sm font-medium bg-indigo-500 hover:bg-indigo-400 text-white px-6 py-3 rounded-full transition-colors duration-200">
+              View Projects →
+            </a>
+            <a
+              href="/cv/Betul-Demir_CV.pdf"
+              download
+              className="text-sm font-medium border border-zinc-700 hover:border-zinc-500 text-zinc-400 hover:text-zinc-100 px-6 py-3 rounded-full transition-colors duration-200">
+              Download CV
+            </a>
           </div>
         </div>
       </div>

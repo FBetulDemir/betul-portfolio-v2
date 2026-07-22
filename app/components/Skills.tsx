@@ -82,7 +82,7 @@ export function Skills() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section header */}
         <div className="mb-20">
-          <p className="text-xs uppercase tracking-widest text-zinc-500 mb-4">
+          <p className="text-xs uppercase tracking-widest text-indigo-400 mb-4">
             03 / Capabilities
           </p>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
