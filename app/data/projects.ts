@@ -142,6 +142,10 @@ export const projects: Project[] = [
         label: "View Figma Preview (4 screens) →",
         href: "https://www.figma.com/proto/ADLGSp5yKjSQ2WeMup0UPo/Framsteg-Organisation-settings?page-id=0%3A1&node-id=1-663&p=f&viewport=503%2C511%2C0.16&t=VDUXel5AJhoC6vWP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A8",
       },
+      {
+        label: "Read Full Case Study (PDF) →",
+        href: "/projects/Framsteg_Case_Study.pdf",
+      },
     ],
     note: "Framsteg 247 AB (startup) · In active development · Internship, Late Nov 2025 – Early Feb 2026 · Figma preview limited to 4 screens at the company's request while the platform is in active, unreleased development",
   },
