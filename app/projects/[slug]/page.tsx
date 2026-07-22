@@ -77,6 +77,27 @@ export default async function ProjectPage(
           ))}
         </div>
 
+        <div className="mb-10">
+          <p className="text-xs uppercase tracking-widest text-indigo-400 mb-6">
+            Process
+          </p>
+          <ol className="relative space-y-8 border-l border-zinc-800 pl-8">
+            {project.process.map((step, i) => (
+              <li key={step.phase} className="relative">
+                <span className="absolute left-[-2.85rem] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-zinc-950 border border-indigo-500/40 text-xs font-medium text-indigo-400">
+                  {i + 1}
+                </span>
+                <h3 className="text-sm font-semibold text-zinc-100 mb-1.5">
+                  {step.phase}
+                </h3>
+                <p className="text-sm text-zinc-400 leading-relaxed">
+                  {step.detail}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+
         <ul className="space-y-3 mb-10">
           {project.bullets.map((b) => (
             <li key={b} className="flex gap-3 text-sm text-zinc-400">
