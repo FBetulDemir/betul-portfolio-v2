@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Betül Demir Korkmaz — Portfolio
 
-## Getting Started
+Personal portfolio site built with Next.js 16 (App Router), TypeScript, and Tailwind CSS 4.
 
-First, run the development server:
+## Tech stack
+
+- **Framework:** Next.js 16 (App Router, Turbopack)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **Font:** Geist (via `next/font`)
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other scripts:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build   # production build
+npm run start   # run the production build
+npm run lint    # ESLint
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/
+  layout.tsx            root layout — wraps every page in Nav, ScrollReset, and Footer
+  page.tsx               homepage — composes Hero, About, Projects, Skills, Contact
+  globals.css             Tailwind entry point + custom theme animations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  components/
+    Hero.tsx              name, tagline, photo, CTA buttons
+    About.tsx             bio + credential
+    Projects.tsx           homepage project teaser cards (image, blurb, tech pills)
+    Skills.tsx             skills/tools grid, grouped by category
+    Contact.tsx             contact links
+    Nav.tsx                fixed header, cross-page section links
+    Footer.tsx              site footer
+    ScrollReset.tsx        resets scroll position to the top on page load
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  data/
+    projects.ts             single source of truth for all project content —
+                             each project has a description, tech list, bullets,
+                             a step-by-step "process" timeline, and links
 
-## Deploy on Vercel
+  projects/[slug]/page.tsx  case-study page, statically generated per project
+                             from data/projects.ts (generateStaticParams)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+public/
+  cv/                       downloadable CV
+  profile/                  Hero profile photo
+  projects/                 project screenshots + case-study PDFs
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Adding or editing a project
+
+All project content lives in [`app/data/projects.ts`](app/data/projects.ts) — nothing else needs to change. Add a new object to the `projects` array with a unique `slug`, and:
+
+- the homepage card in [`Projects.tsx`](app/components/Projects.tsx) picks it up automatically
+- a case-study page is generated automatically at `/projects/<slug>`
