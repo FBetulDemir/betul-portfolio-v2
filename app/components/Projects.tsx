@@ -157,7 +157,7 @@ export function Projects() {
         {/* Section header */}
         <div className="mb-20">
           <p className="text-xs uppercase tracking-widest text-zinc-500 mb-4">
-            01 / Selected Work
+            02 / Selected Work
           </p>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
             Projects

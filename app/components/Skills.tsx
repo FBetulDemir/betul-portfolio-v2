@@ -83,7 +83,7 @@ export function Skills() {
         {/* Section header */}
         <div className="mb-20">
           <p className="text-xs uppercase tracking-widest text-zinc-500 mb-4">
-            02 / Capabilities
+            03 / Capabilities
           </p>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
             Skills & Tools

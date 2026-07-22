@@ -24,7 +24,7 @@ export function Nav() {
         </span>
 
         <nav className="hidden md:flex items-center gap-10">
-          {["Projects", "Skills", "About", "Contact"].map((item) => (
+          {["Projects", "Skills", "About"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}

@@ -16,6 +16,9 @@ export function Hero() {
           </span>
         </div>
 
+        {/* Greeting */}
+        <p className="text-lg md:text-xl text-zinc-400 mb-4">Hey, I&apos;m</p>
+
         {/* Name */}
         <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none mb-2">
           Betül
@@ -28,24 +31,26 @@ export function Hero() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 mt-8 border-t border-zinc-800 pt-10">
           <div className="max-w-lg">
             <p className="text-base md:text-lg text-zinc-400 leading-relaxed">
-              Frontend Developer & Interface Designer. I design in Figma first,
-              then build with Next.js, TypeScript and Tailwind CSS — turning
-              product goals and user needs into clean, maintainable interfaces.
+              Curious by nature, disciplined by necessity. I went from
+              self-taught nights and weekends to formal education to shipping
+              production code.{" "}
+            </p>
+            <p className="text-base md:text-lg text-zinc-400 leading-relaxed mt-2">
+              → These days I design UI and build, and spend summers sailing
+              instead of doomscrolling.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-3 shrink-0">
             <a
               href="#projects"
-              className="text-sm font-medium bg-indigo-500 hover:bg-indigo-400 text-white px-6 py-3 rounded-full transition-colors duration-200"
-            >
+              className="text-sm font-medium bg-indigo-500 hover:bg-indigo-400 text-white px-6 py-3 rounded-full transition-colors duration-200">
               View Projects →
             </a>
             <a
               href="/cv/Betul-Demir_CV.pdf"
               download
-              className="text-sm font-medium border border-zinc-700 hover:border-zinc-500 text-zinc-400 hover:text-zinc-100 px-6 py-3 rounded-full transition-colors duration-200"
-            >
+              className="text-sm font-medium border border-zinc-700 hover:border-zinc-500 text-zinc-400 hover:text-zinc-100 px-6 py-3 rounded-full transition-colors duration-200">
               Download CV
             </a>
           </div>

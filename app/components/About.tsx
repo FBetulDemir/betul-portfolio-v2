@@ -5,7 +5,7 @@ export function About() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
           <div className="md:col-span-4">
             <p className="text-xs uppercase tracking-widest text-zinc-500 mb-4">
-              03 / About
+              01 / About
             </p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
               Who I am
