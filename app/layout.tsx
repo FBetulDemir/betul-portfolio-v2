@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
+import { ScrollReset } from "./components/ScrollReset";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"] });
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${geist.className} bg-zinc-950 text-zinc-100 antialiased`}
       >
+        <ScrollReset />
         <Nav />
         <main>{children}</main>
         <Footer />
