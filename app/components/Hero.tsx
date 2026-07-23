@@ -32,12 +32,15 @@ export function Hero() {
         <div className="max-w-lg flex flex-col gap-8 mt-8  pt-14 pb-4">
           <div>
             <p className="text-base md:text-lg text-zinc-300 leading-relaxed">
-              Curious by nature, disciplined by necessity. I went from
-              self-taught nights and weekends to formal education to shipping
-              production code.{" "}
+              Curious by nature, driven by purpose.
             </p>
             <p className="text-base md:text-lg text-zinc-300 leading-relaxed mt-5">
-              → These days I design UI and{" "}
+              I transitioned from education into software development, earning
+              distinction in every course while working and building
+              production-ready software.
+            </p>
+            <p className="text-base md:text-lg text-zinc-300 leading-relaxed mt-5">
+              → Today I design intuitive user experiences and{" "}
               <span className="relative inline-grid align-baseline">
                 <span className="col-start-1 row-start-1 animate-build-fade-out">
                   build
@@ -48,7 +51,9 @@ export function Hero() {
                   build
                 </span>
               </span>
-              , and spend summers sailing instead of doomscrolling.
+              {" "}modern frontend applications with React, Next.js, and
+              TypeScript. Outside of work, I spend my summers sailing and the
+              rest of the year learning something new.
             </p>
           </div>
 
@@ -59,7 +64,7 @@ export function Hero() {
               View Projects →
             </a>
             <a
-              href="/cv/Betul-Demir-CV.pdf"
+              href="/cv/Betul_Demir_Korkmaz_CV.pdf"
               download
               className="text-sm font-medium border border-zinc-600 hover:border-zinc-400 text-zinc-200 hover:text-white px-6 py-3 rounded-full transition-colors duration-200">
               Download CV
