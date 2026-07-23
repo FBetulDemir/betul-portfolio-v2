@@ -25,7 +25,7 @@ export const projects: Project[] = [
     slug: "shipflow",
     index: "01",
     title: "SHIPFLOW",
-    subtitle: "Website Redesign & Implementation — Internship",
+    subtitle: "Website Redesign & Implementation — Internship (12 weeks)",
     blurb:
       "Solo redesign and WordPress rebuild for a global CFD simulation platform — research through live deploy.",
     description:
@@ -48,23 +48,22 @@ export const projects: Project[] = [
       "Evaluated hosting and platform options, chose WordPress, and recommended HostUp",
       "Built custom post types for news, documents, video tutorials, and a publications directory, plus role-based user profiles with license display",
       "Integrated Contact Form 7, Profile Builder, Fluent Support, ACF, Brevo email, Newsletter, and Yoast SEO",
-      "Configured DNS, SSL, and automated daily backups, then wrote full handover documentation for the client",
     ],
     process: [
       {
         phase: "Research & Discovery",
         detail:
-          "Spent two weeks interviewing the two people who mattered most — Flowtech's directing manager and an engineer who uses the software daily — to find what was missing, confusing, or unnecessary in the existing site.",
+          "Ran a two-week discovery phase — audited the existing site, analysed several competitor platforms, and researched the naval architecture domain to prepare informed interview questions. Interviewed Flowtech's directing manager and a daily software user to uncover what was missing, confusing, or unnecessary.",
       },
       {
         phase: "Design",
         detail:
-          "Spent two weeks establishing visual direction — color, typography, layout — then a third week refining with stakeholder feedback until page structure, components, and content hierarchy were fully agreed.",
+          "Spent two weeks establishing visual direction — color, typography, layout — and designing the screens then a third week refining with stakeholder feedback until page structure, components, and content hierarchy were fully agreed.",
       },
       {
         phase: "Build",
         detail:
-          "Evaluated platforms and chose WordPress with HostUp hosting — a CMS I'd never worked in before — and learned it quickly enough to spend 6+ weeks building custom post types, role-based user profiles, and plugin integrations (ACF, Contact Form 7, Fluent Support, Brevo) around the finished design.",
+          "Evaluated platforms and chose WordPress with HostUp hosting — a CMS I'd never worked in before — and learned it quickly enough to spend 7 weeks building custom post types, role-based user profiles, and plugin integrations (ACF, Contact Form 7, Fluent Support, Brevo) around the finished design. For Chinese customers who could not use YouTube, I also implemented an alternative way to share tutorial videos with them.",
       },
       {
         phase: "Launch & Handover",
@@ -89,7 +88,8 @@ export const projects: Project[] = [
     slug: "framsteg",
     index: "02",
     title: "Framsteg",
-    subtitle: "UX/UI Redesign & Frontend Implementation — Internship",
+    subtitle:
+      "UX/UI Redesign & Frontend Implementation — Internship (12 weeks)",
     blurb:
       "UX/UI redesign and 30+ production components for an AI startup's platform, in an unfamiliar stack and domain.",
     description:
@@ -119,7 +119,7 @@ export const projects: Project[] = [
       {
         phase: "Research & Discovery",
         detail:
-          "Spent two weeks interviewing technology transfer officers to understand IP licensing and commercialization workflows — a domain that was completely unfamiliar to me going in.",
+          "Spent two weeks researching and interviewing a technology transfer officer to understand IP licensing and commercialization workflows — a domain that was completely unfamiliar to me going in.",
       },
       {
         phase: "Design",
@@ -129,12 +129,12 @@ export const projects: Project[] = [
       {
         phase: "Build",
         detail:
-          "Learned Next.js, TypeScript, and Tailwind CSS on the job — none of which I'd used before — while building 30+ production React components: UI foundations, forms, dashboard sections, and organization features like billing and team roles. Split the work with a second frontend developer over a Kanban board, taking on the feature-heavy pages myself.",
+          "Learned Next.js and Tailwind CSS on the job — none of which I'd used before — while building 30+ production React components: UI foundations, forms, dashboard sections, and organization features like billing and team roles. Split the work with a second frontend developer over a Kanban board.",
       },
       {
         phase: "Handoff",
         detail:
-          "Handed off the full component library and page structures at the end of the internship — no formal documentation needed, since constant pairing meant the team already knew my code. The platform is still in active development on that foundation.",
+          "Handed off the full design and user flow, along with most of the coded component library built from my designs, at the end of the internship — no formal documentation needed, since constant pairing meant the team already knew my code. The platform is still in active development on that foundation.",
       },
     ],
     links: [
@@ -166,7 +166,7 @@ export const projects: Project[] = [
       "TypeScript",
       "Tailwind CSS",
       "Supabase",
-      "PostgreSQL",
+
       "Figma",
       "Gemini API",
     ],
@@ -176,7 +176,6 @@ export const projects: Project[] = [
       "Scoped deliberately to an MVP: anonymous post feed, comments, hashtag filtering, and a simple nickname-and-avatar profile",
       "Built a simplified identity model instead of full authentication — nickname and emoji avatar, no email or password — to keep the barrier to participation low",
       "Implemented a dynamic Trending Topics word cloud and integrated the Gemini API as an optional 'Ask AI' assistant for users unsure how to phrase a post",
-      "Enabled Row Level Security on every Supabase table as groundwork for real authentication in a future version",
     ],
     process: [
       {
@@ -219,9 +218,9 @@ export const projects: Project[] = [
     title: "ChoreQuest",
     subtitle: "Household Chore Tracker — Mobile PWA",
     blurb:
-      "A two-person chore tracker that turns housework into a points-based leaderboard game.",
+      "A chore tracker that turns housework into a points-based leaderboard game. Built an invite-by-code household system that supports multiple members in one household.",
     description:
-      "A two-person household chore tracker where recurring chores are assigned points based on difficulty. Members complete chores, earn points, and compete on a leaderboard.",
+      "A household chore tracker where recurring chores are assigned points based on difficulty. Members complete chores, earn points, and compete on a leaderboard.",
     image: "/projects/chore-app.png",
     imageFit: "contain",
     focus: ["Product Design", "Full-Stack Development", "PWA"],
