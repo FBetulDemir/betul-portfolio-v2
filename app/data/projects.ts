@@ -18,6 +18,7 @@ export type Project = {
   process: ProcessStep[];
   links: { label: string; href: string }[];
   note?: string;
+  proved?: string[];
 };
 
 export const projects: Project[] = [
@@ -146,6 +147,13 @@ export const projects: Project[] = [
         label: "Read Full Case Study (PDF) →",
         href: "/projects/Framsteg_Case_Study.pdf",
       },
+    ],
+    proved: [
+      "Ability to learn new technologies (Next.js, TypeScript, Tailwind) under real project pressure.",
+      "Component-driven development at scale.",
+      "Effective collaboration in agile startup environments.",
+      "Research-informed design in unfamiliar domains.",
+      "Comfort working with mentors and peer developers in small teams.",
     ],
     note: "Framsteg 247 AB (startup) · In active development · Internship, Late Nov 2025 – Early Feb 2026 · Figma preview limited to 4 screens at the company's request while the platform is in active, unreleased development",
   },

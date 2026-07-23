@@ -52,7 +52,7 @@ export default async function ProjectPage(
         </h1>
         <p className="text-base text-zinc-500 mb-10">{project.subtitle}</p>
 
-        <div className="relative aspect-16/9 rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 mb-10">
+        <div className="relative aspect-video rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 mb-10">
           <Image
             src={project.image}
             alt={project.title}
@@ -106,6 +106,22 @@ export default async function ProjectPage(
             </li>
           ))}
         </ul>
+
+        {project.proved && project.proved.length > 0 && (
+          <div className="mb-10">
+            <p className="text-xs uppercase tracking-widest text-indigo-400 mb-6">
+              What This Project Proved
+            </p>
+            <ul className="space-y-3">
+              {project.proved.map((item) => (
+                <li key={item} className="flex gap-3 text-sm text-zinc-400">
+                  <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div className="flex flex-wrap gap-4 mb-4">
           {project.links.map((l) => (
