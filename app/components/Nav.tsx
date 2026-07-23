@@ -32,7 +32,7 @@ export function Nav() {
             <Link
               key={item}
               href={`/#${item.toLowerCase()}`}
-              className="text-sm text-zinc-500 hover:text-zinc-100 transition-colors duration-200"
+              className="text-sm text-zinc-300 hover:text-white transition-colors duration-200"
             >
               {item}
             </Link>

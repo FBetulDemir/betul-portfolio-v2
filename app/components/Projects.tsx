@@ -52,7 +52,7 @@ export function Projects() {
               <h3 className="text-2xl font-bold tracking-tight mb-2 group-hover:text-indigo-300 transition-colors duration-200">
                 {project.title}
               </h3>
-              <p className="text-sm text-zinc-400 leading-relaxed mb-5">
+              <p className="text-sm text-zinc-300 leading-relaxed mb-5">
                 {project.blurb}
               </p>
 

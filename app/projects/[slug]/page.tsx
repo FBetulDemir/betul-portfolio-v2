@@ -39,7 +39,7 @@ export default async function ProjectPage(
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <Link
           href="/#projects"
-          className="text-sm text-zinc-500 hover:text-zinc-100 transition-colors duration-200"
+          className="text-sm text-zinc-300 hover:text-white transition-colors duration-200"
         >
           ← Back to projects
         </Link>
@@ -50,7 +50,7 @@ export default async function ProjectPage(
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-3">
           {project.title}
         </h1>
-        <p className="text-base text-zinc-500 mb-10">{project.subtitle}</p>
+        <p className="text-base text-zinc-300 mb-10">{project.subtitle}</p>
 
         <div className="relative aspect-video rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 mb-10">
           <Image
@@ -90,7 +90,7 @@ export default async function ProjectPage(
                 <h3 className="text-sm font-semibold text-zinc-100 mb-1.5">
                   {step.phase}
                 </h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">
+                <p className="text-sm text-zinc-300 leading-relaxed">
                   {step.detail}
                 </p>
               </li>
@@ -100,7 +100,7 @@ export default async function ProjectPage(
 
         <ul className="space-y-3 mb-10">
           {project.bullets.map((b) => (
-            <li key={b} className="flex gap-3 text-sm text-zinc-400">
+            <li key={b} className="flex gap-3 text-sm text-zinc-300">
               <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
               <span>{b}</span>
             </li>
@@ -114,7 +114,7 @@ export default async function ProjectPage(
             </p>
             <ul className="space-y-3">
               {project.proved.map((item) => (
-                <li key={item} className="flex gap-3 text-sm text-zinc-400">
+                <li key={item} className="flex gap-3 text-sm text-zinc-300">
                   <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
                   <span>{item}</span>
                 </li>
@@ -138,7 +138,7 @@ export default async function ProjectPage(
         </div>
 
         {project.note && (
-          <p className="text-xs text-zinc-600 leading-relaxed">
+          <p className="text-xs text-zinc-400 leading-relaxed">
             {project.note}
           </p>
         )}

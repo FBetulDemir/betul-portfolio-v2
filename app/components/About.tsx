@@ -13,7 +13,7 @@ export function About() {
           </div>
 
           <div className="md:col-span-8 space-y-6">
-            <p className="text-lg text-zinc-400 leading-relaxed">
+            <p className="text-lg text-zinc-300 leading-relaxed">
               I&apos;m a frontend developer who enjoys owning the full UI
               process — from user flows and UX decisions in Figma to
               implementation in React, Next.js, TypeScript, and modern
@@ -27,7 +27,7 @@ export function About() {
             </p>
 
             <div className="border border-zinc-800 bg-zinc-900 rounded-xl px-5 py-4">
-              <p className="text-sm text-zinc-500">
+              <p className="text-sm text-zinc-300">
                 Frontend Developer (FED24) · NBI-Handelsakademin · Passed with
                 Distinction ·{" "}
                 <a
@@ -50,14 +50,14 @@ export function About() {
                 href="https://github.com/FBetulDemir"
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm font-medium text-zinc-500 hover:text-zinc-300 transition-colors">
+                className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
                 GitHub
               </a>
               <a
                 href="https://www.linkedin.com/in/betuldemir"
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm font-medium text-zinc-500 hover:text-zinc-300 transition-colors">
+                className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
                 LinkedIn
               </a>
             </div>

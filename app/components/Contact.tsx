@@ -11,7 +11,7 @@ export function Contact() {
             <h2 className="text-4xl md:text-7xl font-bold tracking-tight leading-none">
               Let&apos;s work
               <br />
-              <span className="text-zinc-600">together.</span>
+              <span className="text-zinc-400">together.</span>
             </h2>
           </div>
 
@@ -21,7 +21,7 @@ export function Contact() {
               className="flex items-center justify-between group border border-zinc-800 hover:border-zinc-600 bg-zinc-900 hover:bg-zinc-800 rounded-2xl px-6 py-5 transition-all duration-200"
             >
               <span className="text-sm font-medium text-zinc-300">Email</span>
-              <span className="text-sm text-zinc-500 group-hover:text-zinc-300 transition-colors">
+              <span className="text-sm text-zinc-300 group-hover:text-white transition-colors">
                 fatmabetuld@gmail.com
               </span>
             </a>
@@ -32,7 +32,7 @@ export function Contact() {
               className="flex items-center justify-between group border border-zinc-800 hover:border-zinc-600 bg-zinc-900 hover:bg-zinc-800 rounded-2xl px-6 py-5 transition-all duration-200"
             >
               <span className="text-sm font-medium text-zinc-300">GitHub</span>
-              <span className="text-sm text-zinc-500 group-hover:text-zinc-300 transition-colors">
+              <span className="text-sm text-zinc-300 group-hover:text-white transition-colors">
                 FBetulDemir
               </span>
             </a>
@@ -45,7 +45,7 @@ export function Contact() {
               <span className="text-sm font-medium text-zinc-300">
                 LinkedIn
               </span>
-              <span className="text-sm text-zinc-500 group-hover:text-zinc-300 transition-colors">
+              <span className="text-sm text-zinc-300 group-hover:text-white transition-colors">
                 betuldemir
               </span>
             </a>
